@@ -1,5 +1,5 @@
 class Spree::PagesController < Spree::BaseController
-  include Spree::Core::CurrentOrder
+  include Spree::Core::ControllerHelpers::Order
 
   def show
     @page = current_page
